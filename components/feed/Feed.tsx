@@ -3,7 +3,7 @@ import React from "react";
 
 function Feed() {
   return (
-    <div>
+    <div className="col-span-5">
       <div className="flex items-center justify-between">
         <h1 className="p-5 pb-0 text-xl font-bold">Home</h1>
         <RefreshIcon

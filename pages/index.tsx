@@ -1,7 +1,8 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Feed from '../components/Feed'
-import Sidebar from '../components/Sidebar'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Feed from "../components/feed/Feed";
+import Sidebar from "../components/sidebar/Sidebar";
+import Widgets from "../components/widgets/Widgets";
 
 const Home: NextPage = () => {
   return (
@@ -10,14 +11,13 @@ const Home: NextPage = () => {
         <title>Twitter 2.0</title>
       </Head>
 
-      <main>
-      <Sidebar/>
-      <Feed/>
-      {/* {Widgets} */}
+      <main className="grid grid-cols-9 ">
+        <Sidebar />
+        <Feed />
+        <Widgets />
       </main>
-
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
