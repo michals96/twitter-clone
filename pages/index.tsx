@@ -23,8 +23,8 @@ const Home: NextPage = () => {
 export default Home;
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  const tweets = await fetchTweets();
-  
+  // const tweets = await fetchTweets();
+
   return {
     props: {
 
