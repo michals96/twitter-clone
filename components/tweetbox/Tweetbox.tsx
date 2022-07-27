@@ -9,7 +9,7 @@ import {
 import { useState } from "react";
 
 function Tweetbox() {
-    const [input, setInput] = useState<string>('')
+  const [input, setInput] = useState<string>("");
 
   return (
     <div className="flex space-x-2 p-5">
@@ -22,7 +22,7 @@ function Tweetbox() {
       <div className="flex flex-1 items-center pl-2">
         <form className="flex flex-1 flex-col">
           <input
-            onChange={e => setInput(e.target.value)}
+            onChange={(e) => setInput(e.target.value)}
             value={input}
             type="text"
             placeholder="What's Happening?"
@@ -36,7 +36,10 @@ function Tweetbox() {
               <CalendarIcon className="h-5 w-5" />
               <LocationMarkerIcon className="h-5 w-5" />
             </div>
-            <button disabled={!input} className="bg-twitter px-5 py-2 font-bold text-white rounded-full disabled:opacity-40">
+            <button
+              disabled={!input}
+              className="bg-twitter px-5 py-2 font-bold text-white rounded-full disabled:opacity-40"
+            >
               Tweet
             </button>
           </div>
