@@ -40,3 +40,10 @@ A project that is *almost* 1:1 Twitter copy
 * deployment slot: Heroku
 * monorepo
 * IAAC / Terraform and K8S
+
+TO-DO:
+- scrollable tweet feed
+- fetching tweets from the backend
+- unit tests
+- deployment (pipeline w/ check style eslint code coverage, deploy to heroku)
+- security
