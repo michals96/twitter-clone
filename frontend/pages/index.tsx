@@ -1,9 +1,9 @@
 import type { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
-import Feed from "../components/feed/Feed";
-import Sidebar from "../components/sidebar/Sidebar";
-import Widgets from "../components/widgets/Widgets";
-import { fetchTweets } from "../utils/fetchTweets";
+import Feed from "../../components/feed/Feed";
+import Sidebar from "../../components/sidebar/Sidebar";
+import Widgets from "../../components/widgets/Widgets";
+import { fetchTweets } from "../../utils/fetchTweets";
 import { Tweet } from "../types/tweet";
 
 interface Props {
