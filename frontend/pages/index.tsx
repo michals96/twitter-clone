@@ -1,6 +1,6 @@
-import type { GetServerSideProps } from "next";
+import type {GetServerSideProps} from "next";
 import Head from "next/head";
-import { Tweet } from "../types/tweet";
+import {Tweet} from "../types/tweet";
 import Feed from "../components/feed/Feed";
 import Widgets from "../components/widgets/Widgets";
 import Sidebar from "../components/sidebar/Sidebar";
