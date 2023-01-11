@@ -84,7 +84,7 @@ export default function handler(
   res: NextApiResponse<Data>
 ) {
   const tweets: Tweet[] = mockTweet; // TODO:  fetch data here from backend
-  // const backendTweets = fetch('http://localhost:8080/tweets')
+  const backendTweets = fetch('http://localhost:8080/tweets')
 
   res.status(200).json({ tweets: mockTweet });
 }
